@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1 class="display-4 pt-5 ms-5 ps-2">Login</h1>
+
+  <div class="row my-3 ms-5">
+    <div class="col-sm-6">
+      <div class="card bg-success bg-opacity-10">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group pt-3">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark mt-3">Login</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3 m-auto">
+      <div class="rounded">
+        <div class="text-center card-body m-auto">
+          <div class="fw-bold py-3">or</div>
+          <a class="btn btn-light fw-bold" href="/auth/google" role="button" style="text-transform:none">
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+            Sign-In with Google
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

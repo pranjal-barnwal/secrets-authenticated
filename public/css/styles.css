@@ -1,0 +1,40 @@
+*{
+  font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  /* background-color: #E8ECEF; */
+  background: linear-gradient(65deg, #dae4c4 70%, #74c578 30%);
+} 
+
+
+.home-container{
+  background: linear-gradient(to bottom right, rgba(179, 214, 170, 0.716), rgba(203, 234, 185, 0.716));
+  padding: 50px 30px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: inset -5px -5px 45px rgb(82, 103, 76);
+}
+
+
+.centered {
+    padding-top: 130px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 3px 15px;
+  color: #fff;
+  background-color: #50a15a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  outline: none;
+}
+
+.secret-text::placeholder{
+  color: white;
+  background-color: #74c578cb ;
+}
